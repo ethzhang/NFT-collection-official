@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import Button from "./Button"
 import Logo from "./Logo"
 
 
@@ -59,7 +60,7 @@ const Navigation = () => {
                     <MenuItem>Team</MenuItem>
                     <MenuItem>Faq</MenuItem>
                 </Menu> 
-                <h2>Button</h2>
+                <Button text="Connect Wallet" link="https://www.google.com" />
             </NavBar>
         </Section>
     )
