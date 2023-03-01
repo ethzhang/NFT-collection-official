@@ -5,7 +5,7 @@ import TypeWriterText from '../TypeWriterText'
 import RoundTextBlack from '../../assets/Rounded-Text-Black.png';
 
 const Section = styled.section`
-min-height: ${props => `calc(100vh - ${props.theme.navHeight})` };
+min-height: ${props => `calc(100vh - ${props.theme.navHeight})`};
 width: 100vw;
 position: relative;
 background-color: ${props => props.theme.body};
@@ -30,6 +30,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 `
+
 const rotate = keyframes`
 100%{
   transform: rotate(1turn);
@@ -79,14 +80,14 @@ const Home = () => {
           <TypeWriterText></TypeWriterText>
         </Box>
         <Box><CoverVideo></CoverVideo></Box>
-       
-       <Round>
-        <Circle>
-          &#x2193;
-        </Circle>
-        <img src={RoundTextBlack} alt="NFT" />
-       </Round>
-        
+
+        <Round>
+          <Circle>
+            &#x2193;
+          </Circle>
+          <img src={RoundTextBlack} alt="NFT" />
+        </Round>
+
       </Container>
     </Section>
   )
