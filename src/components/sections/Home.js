@@ -74,7 +74,7 @@ font-size: ${props => props.theme.fontxl};
 
 const Home = () => {
   return (
-    <Section>
+    <Section id="home">
       <Container>
         <Box>
           <TypeWriterText></TypeWriterText>

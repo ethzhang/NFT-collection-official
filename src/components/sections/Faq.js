@@ -64,7 +64,7 @@ const Faq = () => {
   }, [])
 
   return (
-    <Section ref={ref}>
+    <Section ref={ref} id="faq">
       <Title>FAQ</Title>
       <Container>
         <Box>
