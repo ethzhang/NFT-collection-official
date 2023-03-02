@@ -72,7 +72,7 @@ border-radius :20px;
   }
 }
 
-@media (max-width: 64em) {
+@media (max-width: 30em) {
   width: 70vw;
 }
 `
