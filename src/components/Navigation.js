@@ -51,7 +51,7 @@ list-style: none;
 
     backdrop-filter: blur(2px);
 
-    transform: ${props => props.click ? 'translateY(0)' : 'translateY(100%)'};
+    transform: ${props => props.click ? 'translateY(0)' : 'translateY(1000%)'};
     transition : all 0.3s ease;
     
     flex-direction: column;
@@ -161,12 +161,12 @@ const Navigation = () => {
                     <MenuItem onClick={() => scrollTo('team')}>Team</MenuItem>
                     <MenuItem onClick={() => scrollTo('faq')}>Faq</MenuItem>
                     <MenuItem>
-                        <div class="mobile">
+                        <div className="mobile">
                         <Button text="Connect Wallet" link="https://www.google.com" />
                         </div>
                     </MenuItem>
                 </Menu>
-                <div class="desktop">
+                <div className="desktop">
                     <Button text="Connect Wallet" link="https://www.google.com" />
                 </div>
 
