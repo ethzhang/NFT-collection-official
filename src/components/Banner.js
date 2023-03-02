@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Button from './Button'
 
 import img1 from '../assets/Nfts/bighead.svg';
 import img2 from '../assets/Nfts/bighead-1.svg';
@@ -24,6 +23,11 @@ justify-content: center;
 align-items:center;
 
 overflow:hidden;
+
+@media (max-width: 48em) {
+    height: 15rem;
+    flex-direction: column;
+}
 `
 
 const ImgContainer = styled.div`
@@ -42,6 +46,13 @@ img{
     width: 15rem;
     height: auto;
 }
+
+@media (max-width: 48em) {
+    img{
+        width: 10rem;
+        height: auto;
+    }
+}
 `
 
 const Title = styled.h1`
@@ -53,12 +64,28 @@ width: 35%;
 text-transform: capitalize;
 
 text-shadow: 1px 1px 2px ${props => props.theme.body};
+
+@media (max-width: 64em){
+    font-size: ${props => props.theme.fontxxl};
+    width: 40%;
+    text-align: center;
+}
+@media (max-width: 48em){
+    font-size: ${props => props.theme.fontxl};
+    width: 100%;
+    padding: 2rem 0;
+}
 `
 
 const BtnContainer = styled.div`
 width: 35%;
 justify-content: flex-end;
 display: flex; 
+
+@media (max-width: 48em){
+    width: 100%;
+    justify-content: center;
+}
 `
 const JoinNow = styled.button`
 display: inline-block;
@@ -72,7 +99,16 @@ padding: 1.5rem 3rem;
 border-radius: 50px;
 cursor: pointer; 
 transition: all 0.2s ease;
-z-index: 1;
+position: relative;
+
+@media (max-width: 48em){
+    padding: 1rem 2rem;
+}
+
+@media (max-width: 30em){
+    padding: 0.5rem 2rem;
+    font-size: ${props => props.theme.fontsm};
+}
 
 &:hover{
     transform: scale(0.9);
