@@ -2,7 +2,7 @@
 import { ThemeProvider } from 'styled-components';
 import Navigation from './components/Navigation';
 import GlobalStyles from './styles/GlobalStyles';
-import {light} from './styles/Themes'; 
+import { light } from './styles/Themes';
 import { dark } from './styles/Themes';
 
 import Home from './components/sections/Home';
@@ -12,11 +12,12 @@ import Showcase from './components/sections/Showcase';
 import Team from './components/sections/Team';
 import Faq from './components/sections/Faq';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <>
-    <GlobalStyles/>
+      <GlobalStyles />
       <ThemeProvider theme={light}>
         <Navigation />
         <Home />
@@ -26,6 +27,7 @@ function App() {
         <Team />
         <Faq />
         <Footer />
+        <ScrollToTop />
       </ThemeProvider>
     </>
   );

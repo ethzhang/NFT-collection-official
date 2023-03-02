@@ -46,9 +46,7 @@ cursor: pointer;
 }
 `
 
-
 const Navigation = () => {
-
     const scrollTo = (id) => {
         let element = document.getElementById(id);
 
@@ -60,7 +58,7 @@ const Navigation = () => {
     }
 
     return (
-        <Section>
+        <Section id="navigation">
             <NavBar>
                 <Logo />
                 <Menu>
